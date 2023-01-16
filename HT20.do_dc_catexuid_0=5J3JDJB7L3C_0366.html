@@ -11,18 +11,9 @@
   </title>
   <meta content="博士茶-溫和不含咖啡因 博士茶原產於南非Western Cape的山區，由一種稱為Aspalathus linearis的植物針葉烘製而成，很早就為當地庫伊族(Khoi tribe)利用作為健康茶飲。南非博士茶與一般茶類不同，低單寧酸且不含咖啡因，是最溫和不刺激的飲品，不會像一般茶類容易傷胃，造成失眠情形。博士茶多種的保健功能，最適合全家大小取代傳統茶類作為日常飲用，冷熱皆宜。在南非，許多母親用博士茶取代水作為嬰兒的副飲品，或用來沖泡牛奶。" name="description"/>
   <meta content="博士茶,無咖啡因.天然茶,茶包,長庚好茶,長庚茶包,南非茶,國寶茶" name="keywords"/>
-  <script>
-   var loca = window.location.href;
-if (loca.indexOf('http://')>=0 && loca.indexOf('localhost')<0 && loca.indexOf('127.0.0.1')<0  && loca.indexOf('10.3.226.76')<0  && loca.indexOf('10.3.227.179')<0){
-	loca = loca.replace("http://", "https://");
-	window.location.href=loca;
-}
-  </script>
   <link href="/j2j0n/cgbStyleCSSJS/CGBstyle.css?t=10" rel="stylesheet" type="text/css"/>
   <link href="/j2j0n/assets/jqueryui/css/jquery-ui-1.8.4.custom-fpg.css" rel="stylesheet" type="text/css"/>
   <!-- jQuery js -->
-  <script src="/j2j0n/assets/js/jquery.min.js">
-  </script>
  </head>
  <body>
   <!-- Preloader -->
@@ -33,13 +24,6 @@ if (loca.indexOf('http://')>=0 && loca.indexOf('localhost')<0 && loca.indexOf('1
    </div>
   </div>
   <!-- ***** Header Area Start ***** -->
-  <script>
-   $(document).ready(function() {
-	
-	$('#carts_items').hide();
-	
-});
-  </script>
   <!-- ***** Header Area End ***** -->
   <form id="productform" method="post" name="productform">
    <input id="maxqty" name="maxqty" type="hidden" value="99999"/>
@@ -495,208 +479,21 @@ if (loca.indexOf('http://')>=0 && loca.indexOf('localhost')<0 && loca.indexOf('1
     </div>
    </div>
   </div>
-  <script>
-   function goRegister(){
-	$('#poplogonform').attr("action", "/j2j0n/Customer/Main.do");
-	$('#poplogonform').submit();
-}
-
-function chkMember(){
-
-	if ($('#dc_lgacno_0').val().length==0){
-		alert('請輸入登入帳號');
-		return;
-	}
-
-	var formdata = $('#poplogonform').serialize();
-	$.ajax({
-		type: "post",
-		url: "/j2j0n/Member/CheckMember.ajax",
-		data: formdata,
-		dataType: "json",
-		success: function(response) {
-			//alert('msg='+response.msg );
-			//alert('errmsg='+response.errmsg );
-			if (response.msg && response.msg == 'successful') {
-				window.location.reload();
-				//$('#poplogonform').attr("action", "/j2j0n/index.do");
-				//$('#poplogonform').submit();
-				return;
-			} else {
-				alert(response.errmsg);
-				return;
-			}
-		},
-		error: function(xhr, ajaxOptions, thrownError) {
-			alert('系統發生異常，請聯絡系統管理人員，謝謝 ');
-		}
-	});
-
-}
-
-
-function doRefreshVcode() {
-	var currentTimeMillis = new Date().getTime();
-	$("#vcode").attr("src", "/j2j0n/Captcha.do?t=" + currentTimeMillis);
-}
-  </script>
   <!-- ******* All JS Files ******* -->
   <!-- jQuery js 改在preload-->
   <!-- Select Style -->
-  <script src="/j2j0n/assets/js/jquery.nice-select.min.js">
-  </script>
   <!-- Popper js -->
-  <script src="/j2j0n/assets/js/popper.min.js">
-  </script>
   <!-- Bootstrap js -->
-  <script src="/j2j0n/assets/Bootstrap-v4.1.3/bootstrap.min.js">
-  </script>
   <!-- All js -->
-  <script src="/j2j0n/cgbStyleCSSJS/cgb-nav.js">
-  </script>
   <!-- Bootstrap datepicker js -->
-  <script src="/j2j0n/assets/js/bootstrap-datepicker.js">
-  </script>
-  <script src="/j2j0n/assets/js/bootstrap-datepicker.zh-TW.min.js">
-  </script>
   <!-- Fanybox JS -->
-  <script src="/j2j0n/assets/fancybox-master/dist/jquery.fancybox.min.js">
-  </script>
   <!-- Active js -->
-  <script src="/j2j0n/assets/OwlCarousel/owl.carousel.min.js" type="text/javascript">
-  </script>
-  <script src="/j2j0n/assets/js/wow.min.js">
-  </script>
-  <script src="/j2j0n/cgbStyleCSSJS/active.js?t=2">
-  </script>
-  <script src="/j2j0n/cgbStyleCSSJS/cgb.style.js?i=6">
-  </script>
-  <script src="/j2j0n/assets/js/jquery.bootpag.min.js">
-  </script>
-  <script src="/j2j0n/assets/js/masonry.pkgd.min.js">
-  </script>
-  <script src="/j2j0n/assets/js/imagesloaded.pkgd.min.js">
-  </script>
   <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
   <!--[if lt IE 9]>
           <script src="assets/js/html5shiv.min.js"></script>
           <script src="assets/js/respond.min.js"></script>
         <![endif]-->
-  <script src="/j2j0n/js/validations.js" type="text/javascript">
-  </script>
-  <script src="/j2j0n/js/date.js" type="text/javascript">
-  </script>
-  <script src="/j2j0n/js/moment.min.js" type="text/javascript">
-  </script>
   <!--fancybox-->
   <link href="/j2j0n/assets/fancybox-master/dist/jquery.fancybox.css" rel="stylesheet" type="text/css"/>
  </body>
- <script>
-  var $productform;
-$(document).ready(function() {
-	$productform = $("#productform");
-
-	if ($('#dc_specxuid_0').length>0){
-		//alert('have spec');
-	}else{
-		//alert('no spec');
-	}
-
-});
-
-function plusqty(qtyid){
-	var maxqty = parseInt($('#maxqty').val());
-	var thisqty = parseInt($('#'+qtyid).val());
-	if (thisqty<maxqty){
-		$('#dc_qty_0').val(thisqty+1);
-	}
-}
-
-function minusqty(qtyid){
-	var minqty = parseInt($('#minqty').val());
-	var thisqty = parseInt($('#'+qtyid).val());
-	if (thisqty>minqty){
-		$('#dc_qty_0').val(thisqty-1);
-	}
-}
-
-
-function doAddToCart(type) {
-	if ($('#dc_specxuid_0').length > 0) {
-		if ($('#dc_specxuid_0').val().length==0) {
-			alert('請選擇規格');
-			return;
-		}
-		$('#dc_cargno_0').val($('#dc_specxuid_0').val());
-	}
-	var $ordqty = $('input[name="dc_qty_0"]:visible');
-	if ($ordqty.val().length == 0) {
-		alert('請選擇數量');
-		return;
-	}
-	var formdata = $productform.serialize();
-	$.ajax({
-		type: 'post',
-		url: '/j2j0n/Cart/AddToCart.do',
-		data: formdata,
-		dataType: 'json',
-		success: function(data) {
-			if (data.cartmsg && data.cartmsg.length > 0) {
-				if (type=='addto'){
-					alert(data.cartmsg);
-					$('#carts_items').show();
-					$('#carts_items').text(data.carttotalpiece);
-				}else{
-					$productform.attr("action", "/j2j0n/Cart.do");
-					$productform.submit();
-				}
-
-				return;
-			} else {
-				alert("加入購物車失敗!");
-				return;
-			}
-		},
-		error: function(xhr, ajaxOptions, thrownError) {
-			alert("加入購物車失敗!");
-		}
-	});
-
-}
-
-
-
-function doGetSpecPrice(pagecargno) {
-	$('#specprice').html('建議售價︰依選取規格')
-	$('#dc_pagecargno_0').val(pagecargno);
-	if ($('#dc_specxuid_0').length > 0) {
-		if ($('#dc_specxuid_0').val().length==0) {
-			return;
-		}
-	}else{
-		return;
-	}
-	var cargno = $('#dc_specxuid_0').val();
-	var formdata = $productform.serialize();
-	$.ajax({
-		type: 'post',
-		url: '/j2j0n/Product/getSpecPrice/'+cargno+'.do',
-		//data: formdata,
-		dataType: 'json',
-		success: function(data) {
-			if (data.msg && data.msg.length > 0 && data.msg=='successful') {
-				$('#specprice').html(data.pricecomt+'︰NT$<span class="price">'+ data.lowprice+'元</span>');
-				return;
-			} else {
-				alert(data.msg);
-				return;
-			}
-		},
-		error: function(xhr, ajaxOptions, thrownError) {
-			//alert("加入購物車失敗!");
-		}
-	});
-
-}
- </script>
 </html>
